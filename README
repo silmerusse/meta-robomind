@@ -1,6 +1,21 @@
 OpenEmbedded/Yocto BSP layer for Robomind distro
 ================================================================
 
-This layer provides support for Robomind distro for
+This layer provides support for Robomind distro and MarS Board for
 use with OpenEmbedded and/or Yocto Freescale's BSP layer.
+
+This layer depends on Freescale Community BSP master HEAD.
+
+HOW TO USE:
+- Please clone or copy this layer into Freescale Community BSP directory. 
+- Run 'source setup-environment build' to setup environment.
+- Edit conf/local.conf and ensure MACHINE is set to 'marsboard', DISTRO is set to 'robomind'.
+- Edit conf/bblayers.conf and ensure BBLAYERS includes 'meta-robomind'. If you are going to build robomind-image-gui you may need to include xfce, gnome and filesystems layers for dependency.
+- Run 'bitbake <image_name>' to bake the image.
+
+robomind-image-gui provides xfce as default destop environment.
+robomind-image-core does not include X11 and xfce.
+
+CONTRIBUTING:
+Please send pull request or patches to silmerusse <silmerusse@yahoo.com>
 
