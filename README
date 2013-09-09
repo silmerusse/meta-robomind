@@ -13,7 +13,7 @@ HOW TO USE:
 - Edit conf/bblayers.conf and ensure BBLAYERS includes 'meta-robomind'. If you are going to build robomind-image-gui you may need to include xfce, gnome and filesystems layers for dependency.
 - Run 'bitbake <image_name>' to bake the image.
 
-robomind-image-gui provides xfce as default destop environment.
+robomind-image-gui provides xfce as default desktop environment.
 robomind-image-core does not include X11 and xfce.
 
 CONTRIBUTING:

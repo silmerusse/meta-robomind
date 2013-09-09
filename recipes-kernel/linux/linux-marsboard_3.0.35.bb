@@ -11,3 +11,6 @@ SRCREV = "${AUTOREV}"
 
 COMPATIBLE_MACHINE = "(marsboard)"
 
+# Move .debug to a seperate package to avoid QA issue.
+PACKAGES =+ "kernel-dbg"
+FILES_kernel-dbg = "${KERNEL_SRC_PATH}/drivers/input/touchscreen/generic_ts_rel/lib/.debug/"
