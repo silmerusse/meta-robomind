@@ -4,7 +4,7 @@ OpenEmbedded/Yocto BSP layer for Robomind distro
 This layer provides support for Robomind distro and MarS Board for
 use with OpenEmbedded and/or Yocto Freescale's BSP layer.
 
-This layer depends on Freescale Community BSP master HEAD.
+This layer depends on Freescale Community BSP "daisy" branch.
 
 HOW TO USE:
 - Please clone or copy this layer into Freescale Community BSP directory. 

@@ -1,5 +1,4 @@
 DISCRIPTION =  "Robomind image with full features for marsboard"
-LICENSE = "MIT"
 
 include robomind-image-gui.bb
 
